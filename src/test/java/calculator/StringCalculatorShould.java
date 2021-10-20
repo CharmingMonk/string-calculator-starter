@@ -19,7 +19,9 @@ class StringCalculatorShould {
     @Test
     void string_with_three_consecutive_six_should_return_number_fourtytwo(){
         StringCalculator stringCalculator = new StringCalculator();
-        assertEquals(42, stringCalculator.add("1,2,6,6,6,5"));
+        String consecutive_six = "1,2,6,6,6,5" ;
+        //String consecutive_six = "[6]{3}" ;
+        assertEquals(42, stringCalculator.add(consecutive_six));
     }
     
     @Test
