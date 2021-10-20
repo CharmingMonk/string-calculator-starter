@@ -15,7 +15,13 @@ class StringCalculatorShould {
         StringCalculator stringCalculator = new StringCalculator();
         assertEquals(0, stringCalculator.add(""));
     }
-
+    
+    @Test
+    void string_with_consecutive_six_should_return_number_fourtytwo(){
+        StringCalculator stringCalculator = new StringCalculator();
+        assertEquals(42, stringCalculator.add("1,2,6,6,6,5"));
+    }
+    
     @Test
     void string_with_single_number_should_return_number_as_int() {
         StringCalculator stringCalculator = new StringCalculator();
